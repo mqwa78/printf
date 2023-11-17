@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 14:13:17 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 13:00:12 by mamahtal         ###   ########.fr       */
+/*   Created: 2023/11/17 13:01:26 by mamahtal          #+#    #+#             */
+/*   Updated: 2023/11/17 13:04:51 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_putchar(int c)
+int	ft_strlen(const char *s)
 {
-	write(1, &c, 1);
-	return (1);
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
