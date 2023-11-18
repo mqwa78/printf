@@ -6,7 +6,7 @@
 /*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 14:00:14 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/18 13:51:39 by mamahtal         ###   ########.fr       */
+/*   Updated: 2023/11/18 16:56:09 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <string.h>
 # include <stdlib.h>
 # include <stdarg.h>
-# include <stdio.h>
 
 int		ft_putchar(int c);
 int		ft_putstr(const char *s);
