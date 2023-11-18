@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 14:08:30 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 14:25:46 by mamahtal         ###   ########.fr       */
+/*   Updated: 2023/11/17 20:16:13 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	ft_putnbr(int n)
 	return (ft_count_digits(n));
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	*a;
 
@@ -57,4 +57,4 @@ int	main(void)
 	printf("%d\n", *a);
 	ft_putnbr(*a);
 	return (0);
-}
+}*/

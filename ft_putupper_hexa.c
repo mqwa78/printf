@@ -6,13 +6,26 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:14:08 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/16 15:16:23 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/17 19:30:01 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putupper_hexa(unsigned int n)
+static int	ft_count_unsigned_upperhexa(unsigned int n)
+{
+	int	count;
+
+	count = 1;
+	while (n >= 16)
+	{
+		count++;
+		n /= 16;
+	}
+	return (count);
+}
+
+int	ft_putupper_hexa(unsigned int n)
 {
 	char	*base;
 
@@ -20,4 +33,6 @@ void	ft_putupper_hexa(unsigned int n)
 	if (n >= 16)
 		ft_putupper_hexa(n / 16);
 	ft_putchar(base[n % 16]);
+	return (ft_count_unsigned_upperhexa(n));
 }
+

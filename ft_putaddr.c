@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putaddr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:57 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 13:24:21 by mamahtal         ###   ########.fr       */
+/*   Updated: 2023/11/17 20:11:20 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,14 @@ int	ft_putaddr(void *addr)
 	if (!addr)
 	{
 		write(1, "(nil)", 5);
-		return (0);
+		return (5);
 	}
 	write(1, "0x", 2);
 	ft_putaddr_hexa((unsigned long long)addr);
 	return (ft_count_long_digits((unsigned long long)addr) + 2);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*s;
 	char	*str;
@@ -60,4 +60,4 @@ int	main(void)
 	printf("%d\n", ft_putaddr(s));
 	printf("%d\n", ft_putaddr(str));
 	return (0);
-}
+}*/
