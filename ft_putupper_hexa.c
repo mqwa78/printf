@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putupper_hexa.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:14:08 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 19:30:01 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/18 13:52:36 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	ft_count_unsigned_upperhexa(unsigned int n)
 {
@@ -35,4 +35,3 @@ int	ft_putupper_hexa(unsigned int n)
 	ft_putchar(base[n % 16]);
 	return (ft_count_unsigned_upperhexa(n));
 }
-

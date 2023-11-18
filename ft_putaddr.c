@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putaddr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:57 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 20:11:20 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/18 13:52:05 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-#include <stdio.h>
+#include "ft_printf.h"
 
 static int	ft_count_long_digits(unsigned long long n)
 {
@@ -47,17 +46,3 @@ int	ft_putaddr(void *addr)
 	ft_putaddr_hexa((unsigned long long)addr);
 	return (ft_count_long_digits((unsigned long long)addr) + 2);
 }
-
-/*int	main(void)
-{
-	char	*s;
-	char	*str;
-
-	s = "yo";
-	str = NULL;
-	printf("%p\n", s);
-	printf("%p\n", str);
-	printf("%d\n", ft_putaddr(s));
-	printf("%d\n", ft_putaddr(str));
-	return (0);
-}*/

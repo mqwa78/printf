@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 14:00:14 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 20:02:19 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/18 13:51:39 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <unistd.h>
 # include <string.h>
@@ -20,9 +20,9 @@
 # include <stdio.h>
 
 int		ft_putchar(int c);
-int 	ft_putstr(const char *s);
-int 	ft_putupper_hexa(unsigned int n);
-int 	ft_putlower_hexa(unsigned int n);
+int		ft_putstr(const char *s);
+int		ft_putupper_hexa(unsigned int n);
+int		ft_putlower_hexa(unsigned int n);
 int		ft_putaddr(void *addr);
 int		ft_putnbr(int n);
 int		ft_put_unsigned_n(unsigned int n);

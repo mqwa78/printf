@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putlower_hexa.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:16:39 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 18:59:48 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/18 14:06:30 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	ft_count_unsigned_lowerhexa(unsigned int n)
 {
@@ -33,11 +33,5 @@ int	ft_putlower_hexa(unsigned int n)
 	if (n >= 16)
 		ft_putlower_hexa(n / 16);
 	ft_putchar(base[n % 16]);
-	ft_count_unsigned_lowerhexa(n);
-}
-
-int	main(void)
-{	
-	printf("%d\n", ft_putlower_hexa(-1));
-	return (0);
+	return (ft_count_unsigned_lowerhexa(n));
 }

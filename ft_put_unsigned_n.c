@@ -6,12 +6,11 @@
 /*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 14:29:40 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 12:42:03 by mamahtal         ###   ########.fr       */
+/*   Updated: 2023/11/18 13:51:48 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-#include <stdio.h>
+#include "ft_printf.h"
 
 static int	ft_count_unsigned_digits(unsigned int n)
 {

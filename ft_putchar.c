@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mamahtal <mamahtal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 14:13:17 by mqwa              #+#    #+#             */
-/*   Updated: 2023/11/17 20:04:14 by mqwa             ###   ########.fr       */
+/*   Updated: 2023/11/18 13:52:14 by mamahtal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(int c)
 {
-	write(1, &c, 1);
+	return (write(1, &c, 1));
 }
